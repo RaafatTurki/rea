@@ -1,6 +1,8 @@
 import React from 'react'
 import Img from 'lib/Img'
 
+import './Home.css'
+
 export default class Home extends React.Component {
     render() {
         return (

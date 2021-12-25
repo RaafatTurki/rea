@@ -1,5 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import unocss from 'unocss/vite'
+import unocssPresetIcons from '@unocss/preset-icons'
 
 export default defineConfig({
     // env vars
@@ -35,6 +37,21 @@ export default defineConfig({
     // plugins
     plugins: [
         react(),
+        unocss({
+            presets: [
+                unocssPresetIcons({
+                    // scale: 2,
+                    // prefix: 'i-',
+                    // mode: 'auto',
+                    // warn: false,
+                    extraProperties: {
+                      'display': 'inline-block',
+                      'vertical-align': 'middle',
+                      // 'background-color': 'red',
+                    }
+                }),
+            ]
+        }),
         beep(),
     ],
 

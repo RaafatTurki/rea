@@ -1,23 +1,24 @@
 {
-    "name": "rea",
-    "version": "1.0.0",
-    "scripts": {
-        "dev": "vite dev",
-        "build": "vite build",
-        "prev": "vite preview",
-        "prod": "vite build && pnpm prev",
-        "clean": "trash public .pnpm-debug.log",
-        "clean-all": "trash public .pnpm-debug.log node_modules"
-    },
-    "devDependencies": {
-        "@iconify/json": "^1.1.447",
-        "@unocss/preset-icons": "^0.18.0",
-        "@unocss/reset": "^0.18.0",
-        "@vitejs/plugin-react": "^1.1.3",
-        "react": "^17.0.2",
-        "react-dom": "^17.0.2",
-        "react-router-dom": "^6.1.1",
-        "unocss": "^0.18.0",
-        "vite": "^2.7.2"
-    }
+  "name": "rea",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "prev": "vite preview",
+    "prod": "vite build && pnpm prev",
+    "clean": "trash public .pnpm-debug.log",
+    "clean-all": "trash public .pnpm-debug.log node_modules"
+  },
+  "devDependencies": {
+    "@iconify/json": "^1.1.447",
+    "@unocss/preset-icons": "^0.18.0",
+    "@unocss/reset": "^0.18.0",
+    "@vitejs/plugin-react": "^1.1.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^6.1.1",
+    "react-stores": "^5.5.0",
+    "unocss": "^0.18.0",
+    "vite": "^2.7.2"
+  }
 }

@@ -1,7 +1,7 @@
 Img {
-    width: 200px;
+  width: 200px;
 }
 
 Img:hover {
-    width: 250px;
+  width: 250px;
 }

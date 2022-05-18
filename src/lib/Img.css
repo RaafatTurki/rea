@@ -1,16 +1,16 @@
 .image_container {
-    width: 100%;
-    box-sizing: border-box;
-    background: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.1);
 }
 
 img {
-    height: 100%;
-    width: 100%;
-    opacity: 0.5;
-    transition: 500ms ease-out;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  transition: 500ms ease-out;
 }
 
 img.is_loaded {
-    opacity: 1;
+  opacity: 1;
 }

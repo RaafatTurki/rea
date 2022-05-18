@@ -1,30 +1,19 @@
 import React from 'react'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import { routes_spa, routes } from './plugins/router'
 
-import Home from 'pages/Home'
-import NotFound from 'pages/NotFound'
-
-import './App.css'
+import './global.css'
 
 export default class App extends React.Component {
-  routes = [
-    {
-      path: "/",
-      component: <Home/>,
-    },
-    {
-      path: "*",
-      component: <NotFound/>,
-    }
-  ]
-
   render() {
-    return (
+    return <>
+      {routes.map((r, i) => <p key={i}>{r.path} goes to {r.meta.name}</p>)}
+
       <BrowserRouter>
         <Routes>
-          {this.routes.map((r, i) => <Route path={r.path} element={r.component} key={i}/>)}
+          {routes_spa.map((r, i) => <Route path={r.path} element={r.element} key={i}/>)}
         </Routes>
       </BrowserRouter>
-    )
+    </>
   }
 }
